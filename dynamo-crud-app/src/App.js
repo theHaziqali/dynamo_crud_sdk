@@ -5,6 +5,8 @@ import EmployeeItem from './components/EmployeeItem';
 import ReadEmployees from './components/ReadEmployee';
 import UpdateEmployee from './components/UpdateEmployee';
 import DeleteEmployee from './components/DeleteEmployee';
+import './App.css';
+
 
 const App = () => {
   return (
