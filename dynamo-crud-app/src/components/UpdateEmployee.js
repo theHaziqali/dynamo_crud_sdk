@@ -2,6 +2,8 @@
 import React, { useState } from 'react';
 import AWS from 'aws-sdk';
 import config from '../config';
+import './EmployeeForm.css';
+
 
 const dynamoDB = new AWS.DynamoDB.DocumentClient(config.awsConfig);
 
@@ -36,7 +38,7 @@ const UpdateEmployee = () => {
   };
 
   return (
-    <div>
+    <div className="employee-form">
       <h2>Update Employee</h2>
       <input
         type="text"
@@ -50,7 +52,7 @@ const UpdateEmployee = () => {
         value={employeeName}
         onChange={(e) => setEmployeeName(e.target.value)}
       />
-      <textarea
+      <input
         placeholder="New Address"
         value={address}
         onChange={(e) => setAddress(e.target.value)}
