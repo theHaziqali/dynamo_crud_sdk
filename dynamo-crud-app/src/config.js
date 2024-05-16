@@ -1,10 +1,10 @@
 // src/config.js
 export default {
   awsConfig: {
-    region: 'your-dynamodb-region',
-    accessKeyId: 'your-access-key-id',
-    secretAccessKey: 'your-secret-access-key',
+    region: process.env.REACT_APP_region,
+    accessKeyId: process.env.REACT_APP_accessKeyId',
+    secretAccessKey: process.env.REACT_APP_secretAccessKey,
   },
-  tableName: '<Table_Name>',
+  tableName: 'Employee',
 };
 
