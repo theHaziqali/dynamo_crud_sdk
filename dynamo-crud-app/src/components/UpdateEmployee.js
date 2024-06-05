@@ -59,7 +59,7 @@ const UpdateEmployee = () => {
       />
       <input
         type="text"
-        placeholder="New CNIC"
+        placeholder="New Phone Number"
         value={cnic}
         onChange={(e) => setCnic(e.target.value)}
       />

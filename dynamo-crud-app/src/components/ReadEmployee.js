@@ -52,7 +52,7 @@ const ReadEmployees = () => {
       <ul>
         {employees.map((employee) => (
           <li key={employee.EmployeeId}>
-            <strong>{employee.EmployeeName}</strong> - {employee.Address} - CNIC: {employee.CNIC}
+            <strong>{employee.EmployeeName}</strong> - {employee.Address} - Phone Number: {employee.CNIC}
             <button onClick={handleDeleteEmployee}>Delete</button>
 
           </li>
