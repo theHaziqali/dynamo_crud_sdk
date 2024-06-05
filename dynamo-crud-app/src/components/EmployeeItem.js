@@ -64,7 +64,7 @@ const EmployeeItem = () => {
       />
       <input
         type="text"
-        placeholder="CNIC"
+        placeholder="Phone Number"
         value={cnic}
         onChange={(e) => setCnic(e.target.value)}
       />
